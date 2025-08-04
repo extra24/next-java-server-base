@@ -4,6 +4,12 @@ FROM openjdk:17-jdk-slim
 # Set the working directory inside the container
 WORKDIR /app
 
+# copy all
+COPY . .
+
+# build
+RUN ./gradlew build -x test
+
 # Copy the Gradle build output (JAR file) into the container
 COPY build/libs/*.jar app.jar
 
