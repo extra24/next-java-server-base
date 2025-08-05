@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-@Tag(name = "Hello Controller", description = "간단한 테스트 API hello")
+@Tag(name = "Hello Controller", description = "테스트 김아람")
 public class HelloController {
 
     @GetMapping("/hello")
